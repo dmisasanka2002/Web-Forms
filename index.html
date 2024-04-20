@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--<style>
+        h3 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        .content {
+            margin-left: 15%;
+            font-weight: 600;
+            display: block;
+        }
+        input, select{
+            position: absolute;
+            left: 45%;
+        }
+        .spButtons{
+            position: static;
+        }
+        .btnGroups{
+            position: absolute;
+            left: 45%;
+            margin-top: -19px;
+        }
+    </style>-->
+</head>
+<body>
+    <form method="put" class="form">
+        <div class="topics">
+            <h3>Account Information</h3>
+        </div>
+        <div class="content">
+            <label>Logging Name* </label><input type="text" name="" id="" required><br><br>
+            <label>Password*     </label><input type="password" name="" id="" required><br><br>
+            <label>Confirm Password*</label><input type="password" name="" id="" required><br><br>
+            <label>Email Address</label><input type="email" class="longtexts"><br><br>
+            <label>Confirm Email</label><input type="email" class="longtexts"><br><br>
+        </div>
+        <div class="topics">
+            <h3>Contact Information</h3>
+        </div>
+        <div class="content">
+            <label>First Name* </label><input type="text" name="" id="" required><br><br>
+            <label>Last Name* </label><input type="text" name="" id="" required><br><br>
+            <label>Address 1* </label><input type="text" name="" id="" required class="longtexts"><br><br>
+            <label>Address 2 </label><input type="text" name="" id="" class="longtexts"><br><br>
+            <label>City* </label><input type="text" name="" id="" required><br><br>
+            <label>State of Province* </label>
+            <select name="" id="province">
+                <option value="">select</option>
+                <option value="central">Central</option>
+                <option value="east">Eastern</option>
+                <option value="north central">North Central</option>
+                <option value="northern">Northern</option>
+                <option value="north western">North Western</option>
+                <option value="sabaragamuwa">Sabaragamuwa</option>
+                <option value="sothern">Sothern</option>
+                <option value="uwa">Uwa</option>
+                <option value="western">Western</option>
+            </select>
+            <br><br>
+            <label>Zip*</label><input type="text" name="" id="" required><br><br>
+            <label>Country* </label><input type="text" name="" id="" required><br><br>
+
+            <label>Gender*</label>
+            <div class="btnGroups">
+                <input type="radio" class="spButtons" name="gender" id="" required><label>Female</label>
+                <input type="radio" class="spButtons" name="gender" id="" required><label>Male</label>
+            </div><br><br> 
+        </div>
+        <div class="topics">
+            <h3>Misc. Information</h3>
+        </div>
+        <div class="content">
+            <label>Annual Household Income </label>
+            <select name="" id="income">
+                <option value="">select</option>
+                <option value="1">100000 - 2000000</option>
+                <option value="2">200000 - 400000</option>
+                <option value="3">400000 - 550000</option>
+                <option value="4">550000 - 800000</option>
+                <option value="5">800000 - 1000000</option>
+                <option value="6">1000000 +</option>
+            </select><br><br>
+
+            <label>Interest</label>
+            <div class="btnGroups">
+                <input type="checkbox" class="spButtons" name="interest" id=""><label>Shopping Fashion</label>
+                <input type="checkbox" class="spButtons" name="interest" id=""><label>Sports</label>
+                <input type="checkbox" class="spButtons" name="interest" id=""><label>Travel</label>
+            </div><br><br>
+
+            <label>Eye Color</label>
+            <div class="btnGroups">
+                <input type="checkbox" class="spButtons" name="eyecolor" id=""><label>Red</label>
+                <input type="checkbox" class="spButtons" name="eyecolor" id=""><label>Green</label>
+                <input type="checkbox" class="spButtons" name="eyecolor" id=""><label>Brown</label>
+                <input type="checkbox" class="spButtons" name="eyecolor" id=""><label>Blue Gold</label>
+            </div><br><br>
+        </div>
+        <div class="content">
+            <input class="spButtons" type="submit" value="submit">
+            <input class="spButtons" type="reset" value="Reset">
+        </div>
+        <br><br><br><br>
+    </form>
+    
+</body>
+</html>
